@@ -1,4 +1,4 @@
-import ArticleApp from './ArticleApp';
+import ArticleCard from './ArticleCard';
 import ArticleHeadingRow from './ArticleHeadingRow';
 import YourArticles from './_data/your-articles.json'
 import MissedArticles from './_data/missed-articles.json'
@@ -7,7 +7,7 @@ function App() {
   const yourArticles = YourArticles.map((article, index) => {
     return (
       <li key={index}>
-        <ArticleApp
+        <ArticleCard
         article={article}
         />
       </li>
@@ -17,7 +17,7 @@ function App() {
   const missedArticles = MissedArticles.map((article, index) => {
     return (
       <li key={index}>
-        <ArticleApp
+        <ArticleCard
         article={article}
         />
       </li>

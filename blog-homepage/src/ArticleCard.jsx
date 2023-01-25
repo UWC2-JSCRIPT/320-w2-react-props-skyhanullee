@@ -3,7 +3,7 @@ import ArticleBody from './ArticleBody';
 import ArticleImage from './ArticleImage';
 
 
-function ArticleApp({ article }) {
+function ArticleCard({ article }) {
   const { title, description, image, author, postedDate, minutesToRead  } = article;
 
   return (
@@ -24,7 +24,7 @@ function ArticleApp({ article }) {
   )
 }
 
-// function ArticleApp({ article }) {
+// function ArticleCard({ article }) {
 
 
 //   return (
@@ -42,4 +42,4 @@ function ArticleApp({ article }) {
 //   )
 // }
 
-export default ArticleApp
+export default ArticleCard
