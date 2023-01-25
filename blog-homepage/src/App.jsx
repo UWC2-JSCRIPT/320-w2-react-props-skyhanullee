@@ -2,6 +2,7 @@ import ArticleCard from './ArticleCard';
 import ArticleHeadingRow from './ArticleHeadingRow';
 import YourArticles from './_data/your-articles.json'
 import MissedArticles from './_data/missed-articles.json'
+import './App.css';
 
 function App() {
   const yourArticles = YourArticles.map((article, index) => {

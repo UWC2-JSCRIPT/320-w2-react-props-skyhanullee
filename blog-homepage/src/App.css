@@ -1,4 +1,42 @@
-.App {
+ul {
+  padding: 0;
+  list-style-type: none;
+  columns: 2;
+}
+
+li {
+  list-style-type: none;
+
+}
+
+.your-articles-container, .missed-articles-container {
+  margin: 1rem;
+}
+
+.article-heading-row {
+  background-color: red;
+}
+
+.article-card {
+  background-color: aqua;
+  display: flex;
+  /* max-height: 20rem; */
+  /* min-height: 20rem; */
+  height: 30rem;
+  margin-bottom: 1rem;
+}
+
+.article-image {
+  overflow: hidden;
+  object-fit: cover;
+  max-width: 41%;
+}
+
+.article-details {
+  columns: 2;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +73,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

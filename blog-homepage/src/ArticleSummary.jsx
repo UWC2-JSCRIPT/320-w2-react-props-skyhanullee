@@ -3,8 +3,8 @@ import React from 'react'
 function ArticleSummary({ title, description }) {
   return (
     <div className='article-summary'>
-      <h1>{title}</h1>
-      <h4>{description}</h4>
+      <h2>{title}</h2>
+      <p>{description}</p>
     </div>
   )
 }

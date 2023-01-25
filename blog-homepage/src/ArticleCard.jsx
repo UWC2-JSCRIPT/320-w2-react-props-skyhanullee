@@ -7,7 +7,7 @@ function ArticleCard({ article }) {
   const { title, description, image, author, postedDate, minutesToRead  } = article;
 
   return (
-    <div className='article-app'>
+    <div className='article-card'>
       <ArticleImage
         image={image}
         altDescription={title}
