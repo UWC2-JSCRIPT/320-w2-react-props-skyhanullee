@@ -1,5 +1,5 @@
 import React from 'react';
-import ArticleDescription from './ArticleDetails';
+import ArticleDetails from './ArticleDetails';
 import ArticleSummary from './ArticleSummary';
 
 function ArticleBody({ title, description, author, postedDate, minutesToRead }) {
@@ -11,7 +11,7 @@ function ArticleBody({ title, description, author, postedDate, minutesToRead }) 
         description={description}
       />
 
-      <ArticleDescription
+      <ArticleDetails
         authorImage={image}
         authorName={name}
         postedDate={postedDate}
