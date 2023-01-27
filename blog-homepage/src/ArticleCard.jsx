@@ -3,11 +3,11 @@ import ArticleBody from './ArticleBody';
 import ArticleImage from './ArticleImage';
 
 
-function ArticleCard({ article }) {
+function ArticleCard({ article, articleType }) {
   const { title, description, image, author, postedDate, minutesToRead  } = article;
 
   return (
-    <div className='article-card'>
+    <div className={ `article-card-${articleType}` }>
       <ArticleImage
         image={image}
         altDescription={title}
