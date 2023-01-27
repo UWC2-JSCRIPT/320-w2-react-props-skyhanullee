@@ -13,7 +13,7 @@ function ArticleDetails({ authorImage, authorName, postedDate, minutesToRead }) 
         <img className='author-image' src={authorImage} alt={authorName}/>
       </div>
       <div className='addtional-info-container'>
-        <h4>{authorName}</h4>
+        <h3>{authorName}</h3>
         <div>
           <p>{formattedDate(postedDate)}</p>
           <p> | </p>
