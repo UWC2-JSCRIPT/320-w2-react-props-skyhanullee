@@ -9,7 +9,8 @@ function App() {
     return (
       <li key={index}>
         <ArticleCard
-        article={article}
+          article={article}
+          articleType='your'
         />
       </li>
     )
@@ -19,7 +20,8 @@ function App() {
     return (
       <li key={index}>
         <ArticleCard
-        article={article}
+          article={article}
+          articleType='missed'
         />
       </li>
     )
@@ -27,21 +29,20 @@ function App() {
 
   return (
     <div className="App">
+      <ArticleHeadingRow
+        rowName='For you'
+      />
       <div className='your-articles-container'>
-        <ArticleHeadingRow
-          rowName='For you'
-        />
         <ul>
-            {yourArticles}
+          {yourArticles}
         </ul>
       </div>
-
+      <ArticleHeadingRow
+        rowName='In case you missed it'
+      />
       <div className='missed-articles-container'>
-        <ArticleHeadingRow
-          rowName='In case you missed it'
-        />
         <ul>
-            {missedArticles}
+          {missedArticles}
         </ul>
       </div>
     </div>
