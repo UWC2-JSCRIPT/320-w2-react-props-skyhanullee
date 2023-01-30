@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-function ArticleDetails({ authorImage, authorName, postedDate, minutesToRead }) {
+function ArticleDetails({ authorImage, authorName, postedDate, minutesToRead, isMediumMember }) {
   function formattedDate(date) {
     return new Date(date).toLocaleDateString('en-Us', 
       {month: 'short', day: 'numeric'
@@ -8,9 +9,9 @@ function ArticleDetails({ authorImage, authorName, postedDate, minutesToRead }) 
   };
 
   return (
-    <div className='article-details'>
+    <div className='article-details-container'>
       <div className='author-image-container'>
-        <img className='author-image' src={authorImage} alt={authorName}/>
+        <img className={`author-image ${isMediumMember ? 'medium-member' : ''}`} src={authorImage} alt={authorName}/>
       </div>
       <div className='addtional-info-container'>
         <h3>{authorName}</h3>
@@ -22,6 +23,14 @@ function ArticleDetails({ authorImage, authorName, postedDate, minutesToRead }) 
       </div>
     </div>
   )
+}
+
+ArticleDetails.propTypes = {
+  authorImage: PropTypes.string.isRequired, 
+  authorName: PropTypes.string.isRequired, 
+  postedDate: PropTypes.string.isRequired, 
+  minutesToRead: PropTypes.number.isRequired, 
+  isMediumMember: PropTypes.bool.isRequired
 }
 
 export default ArticleDetails
