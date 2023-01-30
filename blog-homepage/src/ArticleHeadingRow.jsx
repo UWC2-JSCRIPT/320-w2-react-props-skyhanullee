@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 function ArticleHeadingRow({ rowName }) {
   return (
@@ -7,5 +8,9 @@ function ArticleHeadingRow({ rowName }) {
     </div>
   )
 }
+
+ArticleHeadingRow.propTypes = {
+  rowName: PropTypes.string.isRequired
+};
 
 export default ArticleHeadingRow
