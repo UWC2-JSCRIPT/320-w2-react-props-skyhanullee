@@ -1,45 +1,31 @@
 import React from 'react';
 import ArticleBody from './ArticleBody';
 import ArticleImage from './ArticleImage';
+import PropTypes from 'prop-types';
 
 
 function ArticleCard({ article, articleType }) {
-  const { title, description, image, author, postedDate, minutesToRead  } = article;
+  // const { title, description, image, author, postedDate, minutesToRead, hasAudioAvailable, memberPreview } = article;
+  const { title, image, link} = article;
 
   return (
     <div className={ `article-card-${articleType}` }>
       <ArticleImage
         image={image}
         altDescription={title}
+        link={link}
       />
 
       <ArticleBody
-        title={title}
-        description={description}
-        author={author}
-        postedDate={postedDate}
-        minutesToRead={minutesToRead}
+        article={article}
       />
     </div>
   )
 }
 
-// function ArticleCard({ article }) {
-
-
-//   return (
-//     <div>
-//       {/* <img src={article.image} alt={article.title}/>
-
-//       <ArticleBody 
-//         title={article.title}
-//         description={article.description}
-//         author={article.author}
-//         date={article.date}
-//         minutesToRead={article.minutesToRead}
-//       /> */}
-//     </div>
-//   )
-// }
+ArticleCard.propTypes = {
+  article: PropTypes.object.isRequired,
+  articleType: PropTypes.string.isRequired
+};
 
 export default ArticleCard
