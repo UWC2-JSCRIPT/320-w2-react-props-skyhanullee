@@ -1,8 +1,8 @@
-import React from 'react';
-import ArticleDetails from './ArticleDetails';
-import ArticleSummary from './ArticleSummary';
-import ArticleFeature from './ArticleFeature';
-import PropTypes from 'prop-types';
+import React from 'react'
+import ArticleDetails from './ArticleDetails'
+import ArticleSummary from './ArticleSummary'
+import ArticleFeature from './ArticleFeature'
+import PropTypes from 'prop-types'
 
 // function ArticleBody({ title, description, author, postedDate, minutesToRead, hasAudioAvailable, memberPreview }) {
 function ArticleBody({ article }) {

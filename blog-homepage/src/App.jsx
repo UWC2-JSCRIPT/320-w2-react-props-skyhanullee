@@ -1,8 +1,8 @@
-import ArticleCard from './ArticleCard';
-import ArticleHeadingRow from './ArticleHeadingRow';
-import YourArticles from './your-articles.json';
-import MissedArticles from './missed-articles.json';
-import './App.css';
+import ArticleCard from './ArticleCard'
+import ArticleHeadingRow from './ArticleHeadingRow'
+import YourArticles from './your-articles.json'
+import MissedArticles from './missed-articles.json'
+import './App.css'
 
 function App() {
   const yourArticles = YourArticles.map((article, index) => {

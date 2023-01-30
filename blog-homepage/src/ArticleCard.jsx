@@ -1,7 +1,7 @@
-import React from 'react';
-import ArticleBody from './ArticleBody';
-import ArticleImage from './ArticleImage';
-import PropTypes from 'prop-types';
+import React from 'react'
+import ArticleBody from './ArticleBody'
+import ArticleImage from './ArticleImage'
+import PropTypes from 'prop-types'
 
 
 function ArticleCard({ article, articleType }) {
