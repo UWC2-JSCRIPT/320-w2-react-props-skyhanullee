@@ -12,7 +12,7 @@ function ArticleBody({ article }) {
 
   return (
     <div className='article-body'>
-      <div className='article-card-top-container'>
+      <div className='article-body-top-container'>
         <ArticleFeature
             featureName={'audio'}
             hasFeatureAvailable={hasAudioAvailable}
@@ -27,7 +27,7 @@ function ArticleBody({ article }) {
             link={link}
           />
       </div>
-      <div className='article-card-bottom-container'>
+      <div className='article-body-bottom-container'>
         <ArticleDetails
           authorImage={author.image}
           authorName={author.name}
