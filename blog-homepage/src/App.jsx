@@ -32,14 +32,17 @@ function App() {
       <ArticleHeadingRow
         rowName='For you'
       />
+      <hr></hr>
       <div className='your-articles-container'>
         <ul>
           {yourArticles}
         </ul>
       </div>
+      <br></br>
       <ArticleHeadingRow
         rowName='In case you missed it'
       />
+      <hr></hr>
       <div className='missed-articles-container'>
         <ul>
           {missedArticles}
