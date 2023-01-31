@@ -5,7 +5,6 @@ import PropTypes from 'prop-types'
 
 
 function ArticleCard({ article, articleType }) {
-  // const { title, description, image, author, postedDate, minutesToRead, hasAudioAvailable, memberPreview } = article;
   const { title, image, link} = article;
 
   return (

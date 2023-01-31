@@ -4,11 +4,8 @@ import ArticleSummary from './ArticleSummary'
 import ArticleFeature from './ArticleFeature'
 import PropTypes from 'prop-types'
 
-// function ArticleBody({ title, description, author, postedDate, minutesToRead, hasAudioAvailable, memberPreview }) {
 function ArticleBody({ article }) {
   const { title, description, link, author, postedDate, minutesToRead, hasAudioAvailable, memberPreview } = article;
-
-  // const { name, image, isMediumMember } = author;
 
   return (
     <div className='article-body'>
